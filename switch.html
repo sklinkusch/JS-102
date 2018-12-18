@@ -7,6 +7,20 @@
     <title>Switch in JavaScript</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      let browser = +prompt("Your browser?", "");
+      if (browser == "Edge") {
+        alert("You've got the Edge!");
+      } else if (
+        browser == "Chrome" ||
+        browser == "Firefox" ||
+        browser == "Safari" ||
+        browser == "Opera"
+      ) {
+        alert("OK, we support these browsers too.");
+      } else {
+        alert("We hope, that this page looks OK!");
+      }
+    </script>
   </body>
 </html>
